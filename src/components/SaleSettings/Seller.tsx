@@ -100,11 +100,11 @@ export function Seller() {
       });
 
       for (var i = 0; i < selectedItems.length; ++i) {
-        if (user.tonweb.utils.toNano(user.balance) < user.tonweb.utils.toNano(MinBalanceForSale)) {
-          setError("Low balance");
-          setStatus("");
-          return;
-        }
+        // if (user.tonweb.utils.toNano(user.balance) < user.tonweb.utils.toNano(MinBalanceForSale)) {
+        //   setError("Low balance");
+        //   setStatus("");
+        //   return;
+        // }
 
         setStatus("Putting item on sale...");
         const itemAddress = selectedItems[i].itemAddress;
